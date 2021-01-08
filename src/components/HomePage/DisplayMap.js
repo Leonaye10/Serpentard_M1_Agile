@@ -13,8 +13,6 @@ export default function DisplayMap(props) {
 		iconSize: [50, 70]
 	});
 
-
-
 	const listPos = props.position.map((position) => {
 		if (position.fields.nhits === 0) {
 			console.log("HHFGFGFG")}
@@ -27,7 +25,7 @@ export default function DisplayMap(props) {
 	});
 	return (
 		<Box>
-			<MapContainer style={{ height: '70vh' }} center={[48.866667, 2.333333]} zoom={12}>
+			<MapContainer style={{ height: '72vh' }} center={[48.866667, 2.333333]} zoom={12}>
 				<TileLayer
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 					attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
